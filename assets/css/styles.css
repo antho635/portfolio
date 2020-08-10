@@ -1018,7 +1018,6 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 20px 0;
-  background: #f9f9f9;
 }
 
 .breadcrumbs h2 {
@@ -1222,4 +1221,89 @@ a {
 }
 
 /* couleur lien */
+/* ============ PAGE CERTIFICATS ============= */
+.sticker {
+  --c1: #ef548f;
+  --c2: #ef8b6d;
+  --c3: #cfef6b;
+  --c4: #3bf0c1;
+  --c5: #bb4af0;
+  --shine-angle: 12deg;
+  display: -ms-inline-grid;
+  display: inline-grid;
+      grid-template-areas: "text";
+  place-items: center;
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(1rem, 5vw, 3rem);
+  color: var(--c5);
+}
+
+.sticker-lg {
+  font-size: 3em;
+}
+
+.sticker span {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--shine-angle)), color-stop(0%, rgba(255, 0, 0, 0)), color-stop(35%, rgba(255, 0, 0, 0)), color-stop(49.95%, rgba(255, 255, 255, 0.98)), color-stop(50.15%, rgba(255, 255, 255, 0.98)), color-stop(65%, rgba(255, 0, 0, 0)), to(rgba(255, 0, 0, 0))), -webkit-gradient(linear, left top, right top, from(var(--c1)), color-stop(var(--c2)), color-stop(var(--c3)), color-stop(var(--c4)), to(var(--c5)));
+  background: linear-gradient(var(--shine-angle), rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0) 35%, rgba(255, 255, 255, 0.98) 49.95%, rgba(255, 255, 255, 0.98) 50.15%, rgba(255, 0, 0, 0) 65%, rgba(255, 0, 0, 0)), linear-gradient(to right, var(--c1), var(--c2), var(--c3), var(--c4), var(--c5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.01em rgba(0, 0, 0, 0.6);
+}
+
+.sticker > *, .sticker::before, .sticker::after {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.sticker::before, .sticker::after {
+  content: attr(data-text);
+  color: #fff;
+}
+
+.sticker::before {
+  -webkit-text-stroke: 0.21em transparent;
+  background: no-repeat -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)) 15% 50%/85% 60%;
+  background: no-repeat linear-gradient(transparent, transparent) 15% 50%/85% 60%;
+}
+
+.sticker::after {
+  text-shadow: 0.17em 0.18em 0.15em black, 0em 0em 0em rgba(0, 0, 0, 0.75);
+  z-index: -2;
+}
+
+#titrecert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px auto;
+  width: 100%;
+}
+
+#box-cert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.img-cert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin: 10px auto;
+}
+
+/* ============ PAGE CERTIFICATS ============= */
 /*# sourceMappingURL=styles.css.map */
