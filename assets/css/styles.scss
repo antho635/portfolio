@@ -1291,6 +1291,15 @@ $w: rgba(255,
     margin: 10px auto;
 }
 
+@media screen and (max-width: 600px) {
+    .img-cert {
+        width: 66%;
+    }
+    .sticker {
+        font-size: 1.5em;
+    }
+}
+
 
 /* ============ PAGE CERTIFICATS ============= */
 
