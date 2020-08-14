@@ -71,21 +71,6 @@ h6 {
   top: 0;
   left: 0;
   bottom: 0;
-  -webkit-transition: all ease-in-out 0.5s;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: #040b14;
-  overflow-y: auto;
-}
-
-#header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
   width: 33%;
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
