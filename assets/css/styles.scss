@@ -1507,17 +1507,3 @@ url('https://antho635.github.io/i-cv/image/certif7.png');
         }
     }
 }
-
-.twitterLink {
-    position: fixed;
-    bottom: 0.5em;
-    right: 0.5em;
-    & img {
-        width: 2em;
-        filter: grayscale(100%);
-        transition: filter 0.25s;
-        &:hover {
-            filter: grayscale(0%);
-        }
-    }
-}

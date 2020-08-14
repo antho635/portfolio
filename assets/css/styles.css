@@ -2472,25 +2472,4 @@ a {
             transform: rotateY(180deg);
   }
 }
-
-.twitterLink {
-  position: fixed;
-  bottom: 0.5em;
-  right: 0.5em;
-}
-
-.twitterLink img {
-  width: 2em;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 0.25s;
-  transition: -webkit-filter 0.25s;
-  transition: filter 0.25s;
-  transition: filter 0.25s, -webkit-filter 0.25s;
-}
-
-.twitterLink img:hover {
-  -webkit-filter: grayscale(0%);
-          filter: grayscale(0%);
-}
 /*# sourceMappingURL=styles.css.map */
