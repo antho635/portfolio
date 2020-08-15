@@ -1159,9 +1159,15 @@ section {
   width: 20%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #header {
     width: 33%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header {
+    width: 66%;
   }
 }
 
